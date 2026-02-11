@@ -44,6 +44,9 @@ require("lazy").setup({
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
 	require("plugins.langs.haskall"),
+}, {
+	root = vim.fn.stdpath("data") .. "/lazy",
+	lockfile = vim.fn.stdpath("data") .. "/lazy-lock.json", 
 })
 
 -- Non plugin based LSP configs
