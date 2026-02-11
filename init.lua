@@ -46,7 +46,10 @@ require("lazy").setup({
 	require("plugins.langs.haskall"),
 }, {
 	root = vim.fn.stdpath("data") .. "/lazy",
-	lockfile = vim.fn.stdpath("data") .. "/lazy-lock.json", 
+	lockfile = vim.fn.stdpath("data") .. "/lazy-lock.json",
+	install = {
+		missing = true
+	}
 })
 
 -- Non plugin based LSP configs
